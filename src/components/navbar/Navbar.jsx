@@ -9,7 +9,6 @@ import {
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import myContext from "../../context/data/myContext";
-import SearchDialog from "../searchDialog/SearchDialog";
 import ShareDialogBox from "../shareDialogBox/ShareDialogBox";
 
 export default function Nav() {
@@ -103,11 +102,6 @@ export default function Nav() {
                             {navList}
                         </div>
 
-                        {/* Search Icon */}
-                        <div>
-                            {/* <AiOutlineSearch size={20} color="white" /> */}
-                            <SearchDialog />
-                        </div>
 
                         {/* Share Icon */}
                         <div className="hidden lg:block">

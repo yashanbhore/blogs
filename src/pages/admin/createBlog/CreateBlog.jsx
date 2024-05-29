@@ -185,9 +185,9 @@ function CreateBlog() {
 
                 {/* Four Editor  */}
                 <Editor
-                    apiKey='jetd1oqy1ye03kkc0erqovceffy2lfhlq0n42zqznrfk0uf3'
+                    apiKey='9jo3lu73p1xbfqaw6jvgmsbrmy7qr907nqeafe1wbek6os9d'
                     onEditorChange={(newValue, editor) => {
-                        setBlogs({ blogs, content: newValue });
+                        setBlogs({ ...blogs, content: newValue });
                         settext(editor.getContent({ format: 'text' }));
                     }}
                     onInit={(evt, editor) => {
@@ -197,7 +197,8 @@ function CreateBlog() {
                         plugins: 'a11ychecker advcode advlist advtable anchor autocorrect autolink autoresize autosave casechange charmap checklist code codesample directionality editimage emoticons export footnotes formatpainter fullscreen help image importcss inlinecss insertdatetime link linkchecker lists media mediaembed mentions mergetags nonbreaking pagebreak pageembed permanentpen powerpaste preview quickbars save searchreplace table tableofcontents template  tinydrive tinymcespellchecker typography visualblocks visualchars wordcount'
                     }}
                 />
-                {/* Five Submit Butto */}
+
+                {/* Five Submit Button  */}
                 <Button className=" w-full mt-5"
                 onClick={addPost}
                     style={{
